@@ -1,0 +1,42 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Punto de Venta</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="main-container">
+    <section class="section-empleados">
+      <div class="contenido-empleados">
+        <h1>Empleados</h1>
+        <ul class="lista-empleados">
+          <li>
+            <strong>Alan Dominguez</strong>
+            <p>Floor Manager</p>
+          </li>
+          <li>
+            <strong>Fabian Urich</strong>
+            <p>Cocinero</p>
+          </li>
+          <li>
+            <strong>Hanna</strong>
+            <p>Mesero</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="login-container">
+      <h1>Wacho's <br><span>Feliz Turno</span></h1>
+      <input type="password" id="pinInput" placeholder="Ingresa tu PIN" />
+      <button>Entrar</button>
+      <p id="errorMessage" class="error-message"></p>
+    </section>
+  </main>
+
+  <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+/* styles.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f2f2f2;
+}
+
+.main-container {
+  display: flex;
+  height: 100vh; /* Ocupa toda la pantalla */
+  width: 100%;
+}
+
+.section-empleados, .login-container {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-empleados {
+  background-color: #ffffff;
+  border-right: 2px solid #e0e0e0;
+}
+
+.contenido-empleados h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #0e4d92;
+}
+
+.lista-empleados li {
+  list-style: none;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+.lista-empleados strong {
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.lista-empleados p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.login-container {
+  background-color: #f9f9f9;
+  align-items: center;
+  text-align: center;
+}
+
+.login-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #31353a;
+}
+
+.login-container span {
+  color: #ff7a59;
+}
+
+.login-container input {
+  width: 80%;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.login-container button {
+  width: 80%;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #0e4d92;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #093e76;
+}
+
+.error-message {
+  color: red;
+  margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .section-empleados, .login-container {
+    padding: 2rem;
+    border: none;
+  }
+}
